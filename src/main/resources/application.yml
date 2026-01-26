@@ -1,0 +1,18 @@
+
+spring:
+  application:
+    name: SafetyNet Alerts
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+logging:
+  level:
+    root: INFO
+    com.safetynet.alerts: DEBUG
+  file:
+    name: logs/safetynet-alerts.log
+server:
+  port: 8080
+safetynet:
+  data-file: file:runtime-data/data.json
+  seed-file: classpath:data.json

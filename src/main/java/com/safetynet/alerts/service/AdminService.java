@@ -5,6 +5,8 @@ import com.safetynet.alerts.model.*;
 import com.safetynet.alerts.repository.DataRepository;
 import org.springframework.stereotype.Service;
 import java.io.IOException;
+import java.util.List;
+import java.util.Optional;
 
 @Service
 public class AdminService {
@@ -49,4 +51,32 @@ public class AdminService {
 	public boolean deleteMedicalRecord(String f, String l) throws IOException {
 		return repo.deleteMedicalRecord(f, l);
 	}
+
+	// Get one mapping by address
+	public java.util.Optional<com.safetynet.alerts.model.FirestationMapping> getFirestationByAddress(String address) {
+	    return repo.findStationByAddress(address);
+	}
+
+	// Get all mappings
+	public java.util.List<com.safetynet.alerts.model.FirestationMapping> getAllFirestations() {
+	    return repo.getFirestations();
+	}
+	
+    public int deleteFirestationByStation(int station) throws IOException {
+    return repo.deleteFirestationByStation(station);
+}
+    
+ // Add these imports if missing:
+ // import java.util.Optional;
+ // import java.util.List;
+
+ public Optional<MedicalRecord> getMedicalRecord(String firstName, String lastName) {
+     return repo.findMedical(firstName, lastName);
+ }
+
+ public List<MedicalRecord> getAllMedicalRecords() {
+     return repo.getMedicalrecords();
+ }
+
+
 }

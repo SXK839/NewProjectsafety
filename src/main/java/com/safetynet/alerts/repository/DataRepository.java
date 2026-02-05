@@ -21,6 +21,7 @@ public class DataRepository {
 	private List<FirestationMapping> firestations = new ArrayList<>();
 	private List<MedicalRecord> medicalrecords = new ArrayList<>();
 
+	
 	public synchronized void load() throws IOException {
 		File targetFile;
 		try {
@@ -82,6 +83,8 @@ public class DataRepository {
 	public Optional<FirestationMapping> findStationByAddress(String a) {
 		return firestations.stream().filter(f -> f.getAddress().equalsIgnoreCase(a)).findFirst();
 	}
+	
+
 
 	public List<Person> findPersonsByAddress(String a) {
 		List<Person> res = new ArrayList<>();
@@ -159,6 +162,20 @@ public class DataRepository {
 		if (changed)
 			save();
 		return changed;
+	}
+	
+	public synchronized int deleteFirestationByStation(int station) throws IOException {
+	    int before = firestations.size();
+
+	    boolean removed = firestations.removeIf(f -> f.getStation() == station);
+
+	    int deletedCount = before - firestations.size();
+
+	    if (removed) {
+	        save();
+	    }
+
+	    return deletedCount;
 	}
 
 	public synchronized void addMedicalRecord(MedicalRecord m) throws IOException {

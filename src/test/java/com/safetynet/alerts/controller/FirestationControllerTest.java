@@ -2,7 +2,7 @@ package com.safetynet.alerts.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.safetynet.alerts.controller.FirestationController;
-import com.safetynet.alerts.model.FirestationMapping;
+import com.safetynet.alerts.model.Firestation;
 import com.safetynet.alerts.service.AdminService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -31,9 +31,9 @@ class FirestationControllerTest {
     @Test
     @DisplayName("POST /firestation -> 201 Created")
     void add_mapping_created() throws Exception {
-        var body = new FirestationMapping("1509 Culver St", 3);
+        var body = new Firestation("1509 Culver St", 3);
         // service.addFirestation(...) is void; no exception means success
-        Mockito.doNothing().when(admin).addFirestation(any(FirestationMapping.class));
+        Mockito.doNothing().when(admin).addFirestation(any(Firestation.class));
 
         mvc.perform(post("/firestation")
                 .contentType(MediaType.APPLICATION_JSON)
@@ -47,9 +47,9 @@ class FirestationControllerTest {
     @Test
     @DisplayName("POST /firestation (duplicate) -> 409 Conflict")
     void add_mapping_conflict() throws Exception {
-        var body = new FirestationMapping("1509 Culver St", 3);
+        var body = new Firestation("1509 Culver St", 3);
         Mockito.doThrow(new IllegalStateException("Mapping already exists for this address"))
-               .when(admin).addFirestation(any(FirestationMapping.class));
+               .when(admin).addFirestation(any(Firestation.class));
 
         mvc.perform(post("/firestation")
                 .contentType(MediaType.APPLICATION_JSON)
@@ -60,7 +60,7 @@ class FirestationControllerTest {
     @Test
     @DisplayName("PUT /firestation?address=... -> 200 OK")
     void update_station_ok() throws Exception {
-        Mockito.when(admin.updateFirestation(any(FirestationMapping.class))).thenReturn(true);
+        Mockito.when(admin.updateFirestation(any(Firestation.class))).thenReturn(true);
 
         mvc.perform(put("/firestation")
                 .param("address", "1509 Culver St")
@@ -74,7 +74,7 @@ class FirestationControllerTest {
     @Test
     @DisplayName("PUT /firestation?address=... (not found) -> 404")
     void update_station_not_found() throws Exception {
-        Mockito.when(admin.updateFirestation(any(FirestationMapping.class))).thenReturn(false);
+        Mockito.when(admin.updateFirestation(any(Firestation.class))).thenReturn(false);
 
         mvc.perform(put("/firestation")
                 .param("address", "unknown")
@@ -127,7 +127,7 @@ class FirestationControllerTest {
     @DisplayName("GET /firestation?address=... -> 200 OK")
     void get_by_address_ok() throws Exception {
         Mockito.when(admin.getFirestationByAddress("1509 Culver St"))
-               .thenReturn(Optional.of(new FirestationMapping("1509 Culver St", 3)));
+               .thenReturn(Optional.of(new Firestation("1509 Culver St", 3)));
 
         mvc.perform(get("/firestation")
                 .param("address", "1509 Culver St"))
@@ -151,8 +151,8 @@ class FirestationControllerTest {
     void get_all_ok() throws Exception {
         Mockito.when(admin.getAllFirestations())
                .thenReturn(List.of(
-                       new FirestationMapping("1509 Culver St", 3),
-                       new FirestationMapping("29 15th St", 2)
+                       new Firestation("1509 Culver St", 3),
+                       new Firestation("29 15th St", 2)
                ));
 
         mvc.perform(get("/firestation/all"))

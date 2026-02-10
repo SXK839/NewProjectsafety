@@ -18,7 +18,7 @@ public class DataRepository {
 	@Value("${safetynet.seed-file}")
 	private Resource seedResource;
 	private List<Person> persons = new ArrayList<>();
-	private List<FirestationMapping> firestations = new ArrayList<>();
+	private List<Firestation> firestations = new ArrayList<>();
 	private List<MedicalRecord> medicalrecords = new ArrayList<>();
 
 	
@@ -41,7 +41,7 @@ public class DataRepository {
 			});
 			persons = mapper.convertValue(root.get("persons"), new TypeReference<List<Person>>() {
 			});
-			firestations = mapper.convertValue(root.get("firestations"), new TypeReference<List<FirestationMapping>>() {
+			firestations = mapper.convertValue(root.get("firestations"), new TypeReference<List<Firestation>>() {
 			});
 			medicalrecords = mapper.convertValue(root.get("medicalrecords"), new TypeReference<List<MedicalRecord>>() {
 			});
@@ -67,7 +67,7 @@ public class DataRepository {
 		return persons;
 	}
 
-	public List<FirestationMapping> getFirestations() {
+	public List<Firestation> getFirestations() {
 		return firestations;
 	}
 
@@ -80,7 +80,7 @@ public class DataRepository {
 				.filter(m -> m.getFirstName().equalsIgnoreCase(f) && m.getLastName().equalsIgnoreCase(l)).findFirst();
 	}
 
-	public Optional<FirestationMapping> findStationByAddress(String a) {
+	public Optional<Firestation> findStationByAddress(String a) {
 		return firestations.stream().filter(f -> f.getAddress().equalsIgnoreCase(a)).findFirst();
 	}
 	
@@ -96,7 +96,7 @@ public class DataRepository {
 
 	public List<Person> findPersonsByStation(int s) {
 		Set<String> addrs = new HashSet<>();
-		for (FirestationMapping f : firestations)
+		for (Firestation f : firestations)
 			if (f.getStation() == s)
 				addrs.add(f.getAddress());
 		List<Person> res = new ArrayList<>();
@@ -134,14 +134,14 @@ public class DataRepository {
 		return removed;
 	}
 
-	public synchronized void addFirestation(FirestationMapping fm) throws IOException {
+	public synchronized void addFirestation(Firestation fm) throws IOException {
 		firestations.add(fm);
 		save();
 	}
 
-	public synchronized boolean updateFirestation(FirestationMapping fm) throws IOException {
+	public synchronized boolean updateFirestation(Firestation fm) throws IOException {
 		for (int i = 0; i < firestations.size(); i++) {
-			FirestationMapping cur = firestations.get(i);
+			Firestation cur = firestations.get(i);
 			if (cur.getAddress().equalsIgnoreCase(fm.getAddress())) {
 				firestations.set(i, fm);
 				save();

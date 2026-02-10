@@ -93,7 +93,7 @@ public class AlertService {
 		List<Person> ppl = repo.findPersonsByAddress(address);
 		if (ppl.isEmpty())
 			return new HashMap<>();
-		int station = repo.findStationByAddress(address).map(FirestationMapping::getStation).orElse(-1);
+		int station = repo.findStationByAddress(address).map(Firestation::getStation).orElse(-1);
 		List<ResidentDetailsDTO> residents = new ArrayList<>();
 		for (Person p : ppl) {
 			ResidentDetailsDTO r = new ResidentDetailsDTO();
@@ -114,7 +114,7 @@ public class AlertService {
 
 	public Object floodStations(List<Integer> stations) {
 		Set<String> addrs = repo.getFirestations().stream().filter(f -> stations.contains(f.getStation()))
-				.map(FirestationMapping::getAddress).collect(Collectors.toSet());
+				.map(Firestation::getAddress).collect(Collectors.toSet());
 		if (addrs.isEmpty())
 			return new HashMap<>();
 		Map<String, List<ResidentDetailsDTO>> out = new LinkedHashMap<>();

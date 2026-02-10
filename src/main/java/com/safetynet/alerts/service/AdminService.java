@@ -28,11 +28,11 @@ public class AdminService {
 		return repo.deletePerson(f, l);
 	}
 
-	public void addFirestation(FirestationMapping f) throws IOException {
+	public void addFirestation(Firestation f) throws IOException {
 		repo.addFirestation(f);
 	}
 
-	public boolean updateFirestation(FirestationMapping f) throws IOException {
+	public boolean updateFirestation(Firestation f) throws IOException {
 		return repo.updateFirestation(f);
 	}
 
@@ -53,12 +53,12 @@ public class AdminService {
 	}
 
 	// Get one mapping by address
-	public java.util.Optional<com.safetynet.alerts.model.FirestationMapping> getFirestationByAddress(String address) {
+	public java.util.Optional<com.safetynet.alerts.model.Firestation> getFirestationByAddress(String address) {
 	    return repo.findStationByAddress(address);
 	}
 
 	// Get all mappings
-	public java.util.List<com.safetynet.alerts.model.FirestationMapping> getAllFirestations() {
+	public java.util.List<com.safetynet.alerts.model.Firestation> getAllFirestations() {
 	    return repo.getFirestations();
 	}
 	

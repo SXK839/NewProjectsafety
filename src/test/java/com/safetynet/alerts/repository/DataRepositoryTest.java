@@ -2,7 +2,8 @@ package com.safetynet.alerts.repository;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.safetynet.alerts.model.FirestationMapping;
+import com.safetynet.alerts.model.Firestation;
+import com.safetynet.alerts.model.Firestation;
 import com.safetynet.alerts.model.MedicalRecord;
 import com.safetynet.alerts.model.Person;
 import org.junit.jupiter.api.*;
@@ -120,13 +121,13 @@ class DataRepositoryTest {
  @Test
  void update_firestation_found_and_not_found() throws Exception {
      // Found by address
-     var fmFound = new FirestationMapping("1509 Culver St", 4);
+     var fmFound = new Firestation("1509 Culver St", 4);
      assertThat(repo.updateFirestation(fmFound)).isTrue();
      assertThat(repo.getFirestations())
              .anyMatch(f -> f.getAddress().equalsIgnoreCase("1509 Culver St") && f.getStation() == 4);
 
      // Not found
-     var fmNotFound = new FirestationMapping("Unknown Address", 9);
+     var fmNotFound = new Firestation("Unknown Address", 9);
      assertThat(repo.updateFirestation(fmNotFound)).isFalse();
  }
 

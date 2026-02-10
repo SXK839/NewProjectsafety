@@ -1,6 +1,6 @@
 package com.safetynet.alerts.controller;
 
-import com.safetynet.alerts.model.FirestationMapping;
+import com.safetynet.alerts.model.Firestation;
 import com.safetynet.alerts.service.AdminService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -25,7 +25,7 @@ public class FirestationController {
 
     // ---------- POST /firestation (Add mapping) ----------
     @PostMapping(consumes = "application/json", produces = "application/json")
-    public ResponseEntity<?> add(@RequestBody FirestationMapping mapping) throws IOException {
+    public ResponseEntity<?> add(@RequestBody Firestation mapping) throws IOException {
         log.info("POST /firestation body={}", mapping);
         try {
             // AdminService.addFirestation throws on IO; repository should throw on duplicate or we can allow repo to decide.
@@ -44,13 +44,13 @@ public class FirestationController {
     @PutMapping(params = { "address" }, consumes = "application/json", produces = "application/json")
     public ResponseEntity<?> updateStation(
             @RequestParam("address") String address,
-            @RequestBody FirestationMapping body) throws IOException {
+            @RequestBody Firestation body) throws IOException {
         log.info("PUT /firestation address={} body={}", address, body);
         if (body == null) {
             return ResponseEntity.badRequest().body(Map.of("code", "BAD_REQUEST", "message", "Request body is missing or invalid JSON"));
         }
         // Build mapping for AdminService: address is the selector, station comes from body
-        FirestationMapping patch = new FirestationMapping(address, body.getStation());
+        Firestation patch = new Firestation(address, body.getStation());
         boolean ok = service.updateFirestation(patch);
         if (!ok) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND)
@@ -95,7 +95,7 @@ public class FirestationController {
 
     // ---------- GET /firestation/all ----------
     @GetMapping(value = "/all", produces = "application/json")
-    public ResponseEntity<List<FirestationMapping>> getAll() {
+    public ResponseEntity<List<Firestation>> getAll() {
         var all = service.getAllFirestations();
         return ResponseEntity.ok(all);  // <-- 200 OK with array (may be empty)
     }

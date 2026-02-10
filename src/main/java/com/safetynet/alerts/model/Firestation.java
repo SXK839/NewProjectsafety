@@ -1,14 +1,14 @@
 
 package com.safetynet.alerts.model;
 
-public class FirestationMapping {
+public class Firestation {
 	private String address;
 	private int station;
 
-	public FirestationMapping() {
+	public Firestation() {
 	}
 
-	public FirestationMapping(String a, int s) {
+	public Firestation(String a, int s) {
 		address = a;
 		station = s;
 	}

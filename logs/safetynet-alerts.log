@@ -1,17 +1,377 @@
-2026-02-05T08:43:02.521-05:00  INFO 17836 --- [SafetyNet Alerts] [main] com.safetynet.alerts.AlertsApplication   : Starting AlertsApplication using Java 21.0.2 with PID 17836 (C:\Users\sxk839\eclipse-workspace\SafetyNet-Alerts-full\safetynet-alerts\target\classes started by sxk839 in C:\Users\sxk839\eclipse-workspace\SafetyNet-Alerts-full\safetynet-alerts)
-2026-02-05T08:43:02.538-05:00 DEBUG 17836 --- [SafetyNet Alerts] [main] com.safetynet.alerts.AlertsApplication   : Running with Spring Boot v3.3.4, Spring v6.1.13
-2026-02-05T08:43:02.539-05:00  INFO 17836 --- [SafetyNet Alerts] [main] com.safetynet.alerts.AlertsApplication   : No active profile set, falling back to 1 default profile: "default"
-2026-02-05T08:43:03.578-05:00  INFO 17836 --- [SafetyNet Alerts] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2026-02-05T08:43:03.591-05:00  INFO 17836 --- [SafetyNet Alerts] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-02-05T08:43:03.592-05:00  INFO 17836 --- [SafetyNet Alerts] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
-2026-02-05T08:43:03.677-05:00  INFO 17836 --- [SafetyNet Alerts] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-02-05T08:43:03.677-05:00  INFO 17836 --- [SafetyNet Alerts] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1084 ms
-2026-02-05T08:43:04.213-05:00  INFO 17836 --- [SafetyNet Alerts] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2026-02-05T08:43:04.220-05:00  INFO 17836 --- [SafetyNet Alerts] [main] com.safetynet.alerts.AlertsApplication   : Started AlertsApplication in 2.177 seconds (process running for 2.741)
-2026-02-05T08:43:15.681-05:00  INFO 17836 --- [SafetyNet Alerts] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-02-05T08:43:15.686-05:00  INFO 17836 --- [SafetyNet Alerts] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-02-05T08:43:15.687-05:00  INFO 17836 --- [SafetyNet Alerts] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2026-02-05T08:43:15.760-05:00  INFO 17836 --- [SafetyNet Alerts] [http-nio-8080-exec-1] c.s.alerts.controller.QueryController    : GET /firestation?stationNumber=3
-2026-02-05T08:43:15.765-05:00  INFO 17836 --- [SafetyNet Alerts] [http-nio-8080-exec-1] c.s.alerts.controller.QueryController    : Response: {}
-2026-02-05T08:43:36.127-05:00  INFO 17836 --- [SafetyNet Alerts] [http-nio-8080-exec-2] c.s.alerts.controller.QueryController    : GET /personInfo?lastName=Boyd
-2026-02-05T08:43:36.134-05:00  INFO 17836 --- [SafetyNet Alerts] [http-nio-8080-exec-2] c.s.alerts.controller.QueryController    : Response: [com.safetynet.alerts.dto.PersonInfoDTO@4d21b49e, com.safetynet.alerts.dto.PersonInfoDTO@67a24962, com.safetynet.alerts.dto.PersonInfoDTO@118d3498, com.safetynet.alerts.dto.PersonInfoDTO@5208058, com.safetynet.alerts.dto.PersonInfoDTO@45e55126, com.safetynet.alerts.dto.PersonInfoDTO@30f9f9a1]
+2026-02-10T12:46:24.251-05:00  INFO 23172 --- [SafetyNet Alerts] [main] com.safetynet.alerts.AlertsApplication   : Starting AlertsApplication using Java 21.0.2 with PID 23172 (C:\Users\sxk839\eclipse-workspace\SafetyNet-Alerts-full\safetynet-alerts\target\classes started by sxk839 in C:\Users\sxk839\eclipse-workspace\SafetyNet-Alerts-full\safetynet-alerts)
+2026-02-10T12:46:24.283-05:00 DEBUG 23172 --- [SafetyNet Alerts] [main] com.safetynet.alerts.AlertsApplication   : Running with Spring Boot v3.3.4, Spring v6.1.13
+2026-02-10T12:46:24.285-05:00  INFO 23172 --- [SafetyNet Alerts] [main] com.safetynet.alerts.AlertsApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-02-10T12:46:25.977-05:00  INFO 23172 --- [SafetyNet Alerts] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-10T12:46:25.996-05:00  INFO 23172 --- [SafetyNet Alerts] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-10T12:46:25.997-05:00  INFO 23172 --- [SafetyNet Alerts] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2026-02-10T12:46:26.103-05:00  INFO 23172 --- [SafetyNet Alerts] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-10T12:46:26.103-05:00  INFO 23172 --- [SafetyNet Alerts] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1723 ms
+2026-02-10T12:46:26.961-05:00  INFO 23172 --- [SafetyNet Alerts] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-02-10T12:46:26.973-05:00  INFO 23172 --- [SafetyNet Alerts] [main] com.safetynet.alerts.AlertsApplication   : Started AlertsApplication in 3.437 seconds (process running for 4.666)
+2026-02-10T12:46:55.835-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-10T12:46:55.835-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-10T12:46:55.837-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-10T12:46:55.932-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-1] c.s.alerts.controller.QueryController    : GET /firestation?stationNumber=1
+2026-02-10T12:46:55.940-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-1] c.s.alerts.controller.QueryController    : Response: {persons=[com.safetynet.alerts.dto.PersonSummaryDTO@31f6040d, com.safetynet.alerts.dto.PersonSummaryDTO@496e0e8, com.safetynet.alerts.dto.PersonSummaryDTO@7b185223, com.safetynet.alerts.dto.PersonSummaryDTO@25c43aa9, com.safetynet.alerts.dto.PersonSummaryDTO@24138470, com.safetynet.alerts.dto.PersonSummaryDTO@17b1b1ba], adults=5, children=1}
+2026-02-10T12:47:00.511-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-5] c.s.alerts.controller.QueryController    : GET /firestation?stationNumber=2
+2026-02-10T12:47:00.512-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-5] c.s.alerts.controller.QueryController    : Response: {persons=[com.safetynet.alerts.dto.PersonSummaryDTO@46f0785e, com.safetynet.alerts.dto.PersonSummaryDTO@3f2eee4, com.safetynet.alerts.dto.PersonSummaryDTO@f6f0cd7, com.safetynet.alerts.dto.PersonSummaryDTO@323be8f9, com.safetynet.alerts.dto.PersonSummaryDTO@774c5468], adults=4, children=1}
+2026-02-10T12:47:04.123-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-6] c.s.alerts.controller.QueryController    : GET /firestation?stationNumber=3
+2026-02-10T12:47:04.124-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-6] c.s.alerts.controller.QueryController    : Response: {}
+2026-02-10T12:47:32.362-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-8] c.s.alerts.controller.QueryController    : GET /firestation?stationNumber=2
+2026-02-10T12:47:32.363-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-8] c.s.alerts.controller.QueryController    : Response: {persons=[com.safetynet.alerts.dto.PersonSummaryDTO@53a53c17, com.safetynet.alerts.dto.PersonSummaryDTO@16a7a807, com.safetynet.alerts.dto.PersonSummaryDTO@25f233db, com.safetynet.alerts.dto.PersonSummaryDTO@277bfe1b, com.safetynet.alerts.dto.PersonSummaryDTO@5dc43b67], adults=4, children=1}
+2026-02-10T12:48:01.499-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-9] c.s.alerts.controller.QueryController    : GET /firestation?stationNumber=4
+2026-02-10T12:48:01.505-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-9] c.s.alerts.controller.QueryController    : Response: {persons=[com.safetynet.alerts.dto.PersonSummaryDTO@298b5bf, com.safetynet.alerts.dto.PersonSummaryDTO@479a2b88, com.safetynet.alerts.dto.PersonSummaryDTO@49020312, com.safetynet.alerts.dto.PersonSummaryDTO@76170938], adults=4, children=0}
+2026-02-10T12:48:07.246-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-10] c.s.alerts.controller.QueryController    : GET /firestation?stationNumber=5
+2026-02-10T12:48:07.246-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-10] c.s.alerts.controller.QueryController    : Response: {}
+2026-02-10T12:48:36.948-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-1] c.s.alerts.controller.QueryController    : GET /firestation?stationNumber=2
+2026-02-10T12:48:36.949-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-1] c.s.alerts.controller.QueryController    : Response: {persons=[com.safetynet.alerts.dto.PersonSummaryDTO@62aac695, com.safetynet.alerts.dto.PersonSummaryDTO@5bf29443, com.safetynet.alerts.dto.PersonSummaryDTO@d5a0ff2, com.safetynet.alerts.dto.PersonSummaryDTO@5dc40cc7, com.safetynet.alerts.dto.PersonSummaryDTO@696ee784], adults=4, children=1}
+2026-02-10T12:48:40.303-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-2] c.s.alerts.controller.QueryController    : GET /firestation?stationNumber=3
+2026-02-10T12:48:40.304-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-2] c.s.alerts.controller.QueryController    : Response: {}
+2026-02-10T12:51:02.861-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-5] c.s.alerts.controller.QueryController    : GET /childAlert?address=
+2026-02-10T12:51:02.863-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-5] c.s.alerts.controller.QueryController    : Response: {}
+2026-02-10T12:51:33.962-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-8] c.s.alerts.controller.QueryController    : GET /childAlert?address=1509 Culver St
+2026-02-10T12:51:33.972-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-8] c.s.alerts.controller.QueryController    : Response: [com.safetynet.alerts.dto.ChildAlertDTO@72c64d79, com.safetynet.alerts.dto.ChildAlertDTO@3627601e]
+2026-02-10T12:51:52.006-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-7] c.s.alerts.controller.QueryController    : GET /childAlert?address=29 15th St
+2026-02-10T12:51:52.006-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-7] c.s.alerts.controller.QueryController    : Response: {}
+2026-02-10T12:52:05.290-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-1] c.s.alerts.controller.QueryController    : GET /childAlert?address=834 Binoc Ave
+2026-02-10T12:52:05.290-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-1] c.s.alerts.controller.QueryController    : Response: [com.safetynet.alerts.dto.ChildAlertDTO@7b0988c5]
+2026-02-10T12:53:29.586-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-3] c.s.alerts.controller.QueryController    : GET /firestation?stationNumber=3
+2026-02-10T12:53:29.586-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-3] c.s.alerts.controller.QueryController    : Response: {}
+2026-02-10T12:53:33.459-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-5] c.s.alerts.controller.QueryController    : GET /firestation?stationNumber=2
+2026-02-10T12:53:33.460-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-5] c.s.alerts.controller.QueryController    : Response: {persons=[com.safetynet.alerts.dto.PersonSummaryDTO@67930ecf, com.safetynet.alerts.dto.PersonSummaryDTO@6e3c0cb6, com.safetynet.alerts.dto.PersonSummaryDTO@175a01, com.safetynet.alerts.dto.PersonSummaryDTO@2ca6ed9d, com.safetynet.alerts.dto.PersonSummaryDTO@533c6bb0], adults=4, children=1}
+2026-02-10T12:54:17.774-05:00 ERROR 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-6] c.s.a.controller.GlobalExceptionHandler  : Unhandled error: Required request parameter 'stationNumber' for method parameter type int is not present
+
+org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'stationNumber' for method parameter type int is not present
+	at org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValueInternal(RequestParamMethodArgumentResolver.java:220) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValue(RequestParamMethodArgumentResolver.java:196) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:126) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-02-10T12:55:09.269-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-7] c.s.alerts.controller.QueryController    : GET /phoneAlert?firestation=1
+2026-02-10T12:55:09.272-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-7] c.s.alerts.controller.QueryController    : Response: {phones=[841-874-6512, 841-874-8547, 841-874-7462, 841-874-7784]}
+2026-02-10T12:55:14.031-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-10] c.s.alerts.controller.QueryController    : GET /phoneAlert?firestation=2
+2026-02-10T12:55:14.032-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-10] c.s.alerts.controller.QueryController    : Response: {phones=[841-874-6513, 841-874-7878, 841-874-7512, 841-874-7458]}
+2026-02-10T12:55:17.261-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-9] c.s.alerts.controller.QueryController    : GET /phoneAlert?firestation=3
+2026-02-10T12:55:17.261-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-9] c.s.alerts.controller.QueryController    : Response: {}
+2026-02-10T12:55:20.723-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-1] c.s.alerts.controller.QueryController    : GET /phoneAlert?firestation=4
+2026-02-10T12:55:20.724-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-1] c.s.alerts.controller.QueryController    : Response: {phones=[841-874-6874, 841-874-9845, 841-874-8888, 841-874-9888]}
+2026-02-10T12:55:24.129-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-2] c.s.alerts.controller.QueryController    : GET /phoneAlert?firestation=5
+2026-02-10T12:55:24.129-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-2] c.s.alerts.controller.QueryController    : Response: {}
+2026-02-10T12:56:07.691-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-4] c.s.alerts.controller.QueryController    : GET /fire?address=1509 Culver St
+2026-02-10T12:56:07.702-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-4] c.s.alerts.controller.QueryController    : Response: com.safetynet.alerts.dto.FireResponseDTO@380652af
+2026-02-10T12:56:45.887-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-5] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/flood/stations?stations={1,2} ]. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:482) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:257) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-02-10T12:56:51.811-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-6] c.s.alerts.controller.QueryController    : GET /flood/stations?stations=1,2
+2026-02-10T12:56:51.815-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-6] c.s.alerts.controller.QueryController    : Response: {951 LoneTree Rd=[com.safetynet.alerts.dto.ResidentDetailsDTO@1fc1b2aa], 908 73rd St=[com.safetynet.alerts.dto.ResidentDetailsDTO@6b12630b, com.safetynet.alerts.dto.ResidentDetailsDTO@76a492f5], 947 E. Rose Dr=[com.safetynet.alerts.dto.ResidentDetailsDTO@6b1fb3fc, com.safetynet.alerts.dto.ResidentDetailsDTO@13ed9faf, com.safetynet.alerts.dto.ResidentDetailsDTO@410c941d], 644 Gershwin Cir=[com.safetynet.alerts.dto.ResidentDetailsDTO@225e1a11], 892 Downing Ct=[com.safetynet.alerts.dto.ResidentDetailsDTO@783832d5, com.safetynet.alerts.dto.ResidentDetailsDTO@afb6b02, com.safetynet.alerts.dto.ResidentDetailsDTO@58a766de], 29 15th St=[com.safetynet.alerts.dto.ResidentDetailsDTO@339b48af]}
+2026-02-10T12:57:02.751-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-8] c.s.alerts.controller.QueryController    : GET /flood/stations?stations=1,2,4
+2026-02-10T12:57:02.753-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-8] c.s.alerts.controller.QueryController    : Response: {951 LoneTree Rd=[com.safetynet.alerts.dto.ResidentDetailsDTO@12a01acd], 489 Manchester St=[com.safetynet.alerts.dto.ResidentDetailsDTO@66350ea2], 908 73rd St=[com.safetynet.alerts.dto.ResidentDetailsDTO@1bda04fa, com.safetynet.alerts.dto.ResidentDetailsDTO@7f27f35e], 947 E. Rose Dr=[com.safetynet.alerts.dto.ResidentDetailsDTO@486580c0, com.safetynet.alerts.dto.ResidentDetailsDTO@353b0e2, com.safetynet.alerts.dto.ResidentDetailsDTO@43ae0ed5], 644 Gershwin Cir=[com.safetynet.alerts.dto.ResidentDetailsDTO@5b6c4989], 892 Downing Ct=[com.safetynet.alerts.dto.ResidentDetailsDTO@76cd5071, com.safetynet.alerts.dto.ResidentDetailsDTO@142dd191, com.safetynet.alerts.dto.ResidentDetailsDTO@2db4f29c], 112 Steppes Pl=[com.safetynet.alerts.dto.ResidentDetailsDTO@45816f09, com.safetynet.alerts.dto.ResidentDetailsDTO@3f5a8f71, com.safetynet.alerts.dto.ResidentDetailsDTO@3570aa14], 29 15th St=[com.safetynet.alerts.dto.ResidentDetailsDTO@3dc68942]}
+2026-02-10T12:57:07.131-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-7] c.s.alerts.controller.QueryController    : GET /flood/stations?stations=4
+2026-02-10T12:57:07.135-05:00  INFO 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-7] c.s.alerts.controller.QueryController    : Response: {489 Manchester St=[com.safetynet.alerts.dto.ResidentDetailsDTO@514c1f1d], 112 Steppes Pl=[com.safetynet.alerts.dto.ResidentDetailsDTO@766179e6, com.safetynet.alerts.dto.ResidentDetailsDTO@7710da24, com.safetynet.alerts.dto.ResidentDetailsDTO@4615972c]}
+2026-02-10T12:57:43.230-05:00 ERROR 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-10] c.s.a.controller.GlobalExceptionHandler  : Unhandled error: No static resource personInfolastName=Stelzer.
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource personInfolastName=Stelzer.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-02-10T12:57:59.719-05:00 ERROR 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-1] c.s.a.controller.GlobalExceptionHandler  : Unhandled error: No static resource personInfolastName=Boyd.
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource personInfolastName=Boyd.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-02-10T13:00:24.681-05:00 ERROR 23172 --- [SafetyNet Alerts] [http-nio-8080-exec-4] c.s.a.controller.GlobalExceptionHandler  : Unhandled error: No static resource person/lastName=Boyd.
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource person/lastName=Boyd.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-02-10T13:24:36.086-05:00  INFO 42024 --- [SafetyNet Alerts] [main] com.safetynet.alerts.AlertsApplication   : Starting AlertsApplication using Java 21.0.2 with PID 42024 (C:\Users\sxk839\eclipse-workspace\SafetyNet-Alerts-full\safetynet-alerts\target\classes started by sxk839 in C:\Users\sxk839\eclipse-workspace\SafetyNet-Alerts-full\safetynet-alerts)
+2026-02-10T13:24:36.090-05:00 DEBUG 42024 --- [SafetyNet Alerts] [main] com.safetynet.alerts.AlertsApplication   : Running with Spring Boot v3.3.4, Spring v6.1.13
+2026-02-10T13:24:36.091-05:00  INFO 42024 --- [SafetyNet Alerts] [main] com.safetynet.alerts.AlertsApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-02-10T13:24:37.803-05:00  INFO 42024 --- [SafetyNet Alerts] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-10T13:24:37.825-05:00  INFO 42024 --- [SafetyNet Alerts] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-10T13:24:37.826-05:00  INFO 42024 --- [SafetyNet Alerts] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2026-02-10T13:24:37.924-05:00  INFO 42024 --- [SafetyNet Alerts] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-10T13:24:37.925-05:00  INFO 42024 --- [SafetyNet Alerts] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1762 ms
+2026-02-10T13:24:38.754-05:00  INFO 42024 --- [SafetyNet Alerts] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-02-10T13:24:38.767-05:00  INFO 42024 --- [SafetyNet Alerts] [main] com.safetynet.alerts.AlertsApplication   : Started AlertsApplication in 3.38 seconds (process running for 4.298)
+2026-02-10T13:25:09.398-05:00  INFO 42024 --- [SafetyNet Alerts] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-10T13:25:09.398-05:00  INFO 42024 --- [SafetyNet Alerts] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-10T13:25:09.398-05:00  INFO 42024 --- [SafetyNet Alerts] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-02-10T13:25:09.453-05:00 ERROR 42024 --- [SafetyNet Alerts] [http-nio-8080-exec-1] c.s.a.controller.GlobalExceptionHandler  : Unhandled error: No static resource personInfolastName=Boyd.
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource personInfolastName=Boyd.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-02-10T13:25:29.642-05:00 ERROR 42024 --- [SafetyNet Alerts] [http-nio-8080-exec-2] c.s.a.controller.GlobalExceptionHandler  : Unhandled error: No static resource personInfolastName=Marrack.
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource personInfolastName=Marrack.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-02-10T13:26:24.673-05:00  INFO 42024 --- [SafetyNet Alerts] [http-nio-8080-exec-3] c.s.a.controller.PersonInfoController    : GET /personInfo lastName=Marrack
+2026-02-10T13:26:43.811-05:00  INFO 42024 --- [SafetyNet Alerts] [http-nio-8080-exec-4] c.s.a.controller.PersonInfoController    : GET /personInfo lastName=Boyd
+2026-02-10T13:26:52.051-05:00  INFO 42024 --- [SafetyNet Alerts] [http-nio-8080-exec-5] c.s.alerts.controller.QueryController    : GET /communityEmail?city=
+2026-02-10T13:26:52.051-05:00  INFO 42024 --- [SafetyNet Alerts] [http-nio-8080-exec-5] c.s.alerts.controller.QueryController    : Response: {}
+2026-02-10T13:27:12.865-05:00  INFO 42024 --- [SafetyNet Alerts] [http-nio-8080-exec-6] c.s.alerts.controller.QueryController    : GET /communityEmail?city=Culver
+2026-02-10T13:27:12.869-05:00  INFO 42024 --- [SafetyNet Alerts] [http-nio-8080-exec-6] c.s.alerts.controller.QueryController    : Response: com.safetynet.alerts.dto.CommunityEmailDTO@7804bac9

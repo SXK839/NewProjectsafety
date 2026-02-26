@@ -9,8 +9,10 @@ import java.util.List;
 import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.*;
-import static org.mockito.ArgumentMatchers.*;
-import static org.mockito.Mockito.*;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.doThrow;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 class AdminServiceBranchesTest {
 
@@ -55,10 +57,10 @@ class AdminServiceBranchesTest {
         assertThat(svc.deleteFirestationByStation(3)).isEqualTo(2);
         assertThat(svc.deleteFirestationByStation(3)).isEqualTo(0);
 
-        when(repo.getFirestations()).thenReturn(List.of(new Firestation("A",1)));
+        when(repo.getFirestations()).thenReturn(List.of(new Firestation("A", 1)));
         assertThat(svc.getAllFirestations()).hasSize(1);
 
-        when(repo.findStationByAddress("A")).thenReturn(Optional.of(new Firestation("A",1)));
+        when(repo.findStationByAddress("A")).thenReturn(Optional.of(new Firestation("A", 1)));
         when(repo.findStationByAddress("nope")).thenReturn(Optional.empty());
         assertThat(svc.getFirestationByAddress("A")).isPresent();
         assertThat(svc.getFirestationByAddress("nope")).isEmpty();

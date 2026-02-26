@@ -84,6 +84,12 @@ public class FirestationController {
         return ResponseEntity.noContent().build();
     }
 
+    
+
+
+
+
+
  // ---------- GET /firestation?address=... ----------
     @GetMapping(params = { "address" }, produces = "application/json")
     public ResponseEntity<?> getByAddress(@RequestParam("address") String address) {

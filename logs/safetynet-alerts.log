@@ -15,3 +15,340 @@
 2026-02-26T16:51:19.416-05:00  INFO 62532 --- [SafetyNet Alerts] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
 2026-02-26T16:51:19.493-05:00  INFO 62532 --- [SafetyNet Alerts] [http-nio-8080-exec-1] c.s.alerts.controller.QueryController    : GET /firestation?stationNumber=3
 2026-02-26T16:51:19.502-05:00  INFO 62532 --- [SafetyNet Alerts] [http-nio-8080-exec-1] c.s.alerts.controller.QueryController    : Response: {persons=[com.safetynet.alerts.dto.PersonSummaryDTO@613b3c63, com.safetynet.alerts.dto.PersonSummaryDTO@356e2c5f, com.safetynet.alerts.dto.PersonSummaryDTO@1a754ded, com.safetynet.alerts.dto.PersonSummaryDTO@5342c07e, com.safetynet.alerts.dto.PersonSummaryDTO@6ba23651, com.safetynet.alerts.dto.PersonSummaryDTO@2feae3ae, com.safetynet.alerts.dto.PersonSummaryDTO@1f40d99b, com.safetynet.alerts.dto.PersonSummaryDTO@5a44bb3d, com.safetynet.alerts.dto.PersonSummaryDTO@202e0e9a, com.safetynet.alerts.dto.PersonSummaryDTO@58a17ea2, com.safetynet.alerts.dto.PersonSummaryDTO@41b4e82c], adults=8, children=3}
+2026-02-26T17:01:22.273-05:00  INFO 62532 --- [SafetyNet Alerts] [http-nio-8080-exec-5] c.s.alerts.controller.QueryController    : GET /firestation?stationNumber=1
+2026-02-26T17:01:22.275-05:00  INFO 62532 --- [SafetyNet Alerts] [http-nio-8080-exec-5] c.s.alerts.controller.QueryController    : Response: {persons=[com.safetynet.alerts.dto.PersonSummaryDTO@d15321e, com.safetynet.alerts.dto.PersonSummaryDTO@4817add8, com.safetynet.alerts.dto.PersonSummaryDTO@255cbb9d, com.safetynet.alerts.dto.PersonSummaryDTO@7995056a, com.safetynet.alerts.dto.PersonSummaryDTO@5d344d84, com.safetynet.alerts.dto.PersonSummaryDTO@28385297], adults=5, children=1}
+2026-02-26T17:02:13.806-05:00  INFO 62532 --- [SafetyNet Alerts] [http-nio-8080-exec-6] c.s.alerts.controller.QueryController    : GET /firestation?stationNumber=2
+2026-02-26T17:02:13.807-05:00  INFO 62532 --- [SafetyNet Alerts] [http-nio-8080-exec-6] c.s.alerts.controller.QueryController    : Response: {persons=[com.safetynet.alerts.dto.PersonSummaryDTO@3d6ba3e5, com.safetynet.alerts.dto.PersonSummaryDTO@78692a2c, com.safetynet.alerts.dto.PersonSummaryDTO@519792d4, com.safetynet.alerts.dto.PersonSummaryDTO@495b5469, com.safetynet.alerts.dto.PersonSummaryDTO@294fb22c], adults=4, children=1}
+2026-02-26T17:02:17.277-05:00  INFO 62532 --- [SafetyNet Alerts] [http-nio-8080-exec-7] c.s.alerts.controller.QueryController    : GET /firestation?stationNumber=3
+2026-02-26T17:02:17.279-05:00  INFO 62532 --- [SafetyNet Alerts] [http-nio-8080-exec-7] c.s.alerts.controller.QueryController    : Response: {persons=[com.safetynet.alerts.dto.PersonSummaryDTO@56ed6d2f, com.safetynet.alerts.dto.PersonSummaryDTO@13eff996, com.safetynet.alerts.dto.PersonSummaryDTO@673c324a, com.safetynet.alerts.dto.PersonSummaryDTO@2236ea9b, com.safetynet.alerts.dto.PersonSummaryDTO@1f0f7fe7, com.safetynet.alerts.dto.PersonSummaryDTO@73c006d9, com.safetynet.alerts.dto.PersonSummaryDTO@75e8c489, com.safetynet.alerts.dto.PersonSummaryDTO@601f8a9d, com.safetynet.alerts.dto.PersonSummaryDTO@40b313e, com.safetynet.alerts.dto.PersonSummaryDTO@778e19a8, com.safetynet.alerts.dto.PersonSummaryDTO@44f1475c], adults=8, children=3}
+2026-02-26T17:02:21.277-05:00  INFO 62532 --- [SafetyNet Alerts] [http-nio-8080-exec-8] c.s.alerts.controller.QueryController    : GET /firestation?stationNumber=4
+2026-02-26T17:02:21.278-05:00  INFO 62532 --- [SafetyNet Alerts] [http-nio-8080-exec-8] c.s.alerts.controller.QueryController    : Response: {persons=[com.safetynet.alerts.dto.PersonSummaryDTO@2dd06eaf], adults=1, children=0}
+2026-02-26T17:02:30.399-05:00  INFO 62532 --- [SafetyNet Alerts] [http-nio-8080-exec-10] c.s.alerts.controller.QueryController    : GET /phoneAlert?firestation=1
+2026-02-26T17:02:30.401-05:00  INFO 62532 --- [SafetyNet Alerts] [http-nio-8080-exec-10] c.s.alerts.controller.QueryController    : Response: {phones=[841-874-6512, 841-874-8547, 841-874-7462, 841-874-7784]}
+2026-02-26T17:02:35.155-05:00  INFO 62532 --- [SafetyNet Alerts] [http-nio-8080-exec-1] c.s.alerts.controller.QueryController    : GET /phoneAlert?firestation=2
+2026-02-26T17:02:35.156-05:00  INFO 62532 --- [SafetyNet Alerts] [http-nio-8080-exec-1] c.s.alerts.controller.QueryController    : Response: {phones=[841-874-6513, 841-874-7878, 841-874-7512, 841-874-7458]}
+2026-02-26T17:02:40.737-05:00  INFO 62532 --- [SafetyNet Alerts] [http-nio-8080-exec-3] c.s.alerts.controller.QueryController    : GET /phoneAlert?firestation=3
+2026-02-26T17:02:40.738-05:00  INFO 62532 --- [SafetyNet Alerts] [http-nio-8080-exec-3] c.s.alerts.controller.QueryController    : Response: {phones=[841-874-6512, 841-874-6513, 841-874-6544, 841-874-6874, 841-874-8888, 841-874-9888, 841-874-6741]}
+2026-02-26T17:02:47.094-05:00  INFO 62532 --- [SafetyNet Alerts] [http-nio-8080-exec-2] c.s.alerts.controller.QueryController    : GET /phoneAlert?firestation=4
+2026-02-26T17:02:47.099-05:00  INFO 62532 --- [SafetyNet Alerts] [http-nio-8080-exec-2] c.s.alerts.controller.QueryController    : Response: {phones=[841-874-9845]}
+2026-02-26T17:03:00.229-05:00  INFO 62532 --- [SafetyNet Alerts] [http-nio-8080-exec-4] c.s.alerts.controller.QueryController    : GET /flood/stations?stations=1,2,3,4,5
+2026-02-26T17:03:00.234-05:00  INFO 62532 --- [SafetyNet Alerts] [http-nio-8080-exec-4] c.s.alerts.controller.QueryController    : Response: {748 Townings Dr=[com.safetynet.alerts.dto.ResidentDetailsDTO@3e1214b1, com.safetynet.alerts.dto.ResidentDetailsDTO@9051e3d], 951 LoneTree Rd=[com.safetynet.alerts.dto.ResidentDetailsDTO@643d7821], 489 Manchester St=[com.safetynet.alerts.dto.ResidentDetailsDTO@6b714404], 908 73rd St=[com.safetynet.alerts.dto.ResidentDetailsDTO@334ffc0d, com.safetynet.alerts.dto.ResidentDetailsDTO@5b7fa5f8], 947 E. Rose Dr=[com.safetynet.alerts.dto.ResidentDetailsDTO@6592214a, com.safetynet.alerts.dto.ResidentDetailsDTO@29f10661, com.safetynet.alerts.dto.ResidentDetailsDTO@f8736c2], 644 Gershwin Cir=[com.safetynet.alerts.dto.ResidentDetailsDTO@3dbde4e7], 1509 Culver St=[com.safetynet.alerts.dto.ResidentDetailsDTO@2ad92b40, com.safetynet.alerts.dto.ResidentDetailsDTO@6b6e7c49, com.safetynet.alerts.dto.ResidentDetailsDTO@39a6371f, com.safetynet.alerts.dto.ResidentDetailsDTO@546cd0d3, com.safetynet.alerts.dto.ResidentDetailsDTO@370c6235], 892 Downing Ct=[com.safetynet.alerts.dto.ResidentDetailsDTO@278e088a, com.safetynet.alerts.dto.ResidentDetailsDTO@15d6aee0, com.safetynet.alerts.dto.ResidentDetailsDTO@419f6ba5], 834 Binoc Ave=[com.safetynet.alerts.dto.ResidentDetailsDTO@7f960d78], 112 Steppes Pl=[com.safetynet.alerts.dto.ResidentDetailsDTO@65ef87c0, com.safetynet.alerts.dto.ResidentDetailsDTO@11459714, com.safetynet.alerts.dto.ResidentDetailsDTO@5e77a589], 29 15th St=[com.safetynet.alerts.dto.ResidentDetailsDTO@2021bbd4]}
+2026-02-26T17:03:16.934-05:00  INFO 62532 --- [SafetyNet Alerts] [http-nio-8080-exec-5] c.s.alerts.controller.QueryController    : GET /communityEmail?city=Culver
+2026-02-26T17:03:16.938-05:00  INFO 62532 --- [SafetyNet Alerts] [http-nio-8080-exec-5] c.s.alerts.controller.QueryController    : Response: com.safetynet.alerts.dto.CommunityEmailDTO@2c760e1e
+2026-02-26T17:07:44.965-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.safetynet.alerts.AdminControllerTest   : Starting AdminControllerTest using Java 21.0.2 with PID 36316 (started by sxk839 in C:\Users\sxk839\eclipse-workspace\SafetyNet-Alerts-full\safetynet-alerts)
+2026-02-26T17:07:44.968-05:00 DEBUG 36316 --- [SafetyNet Alerts] [main] c.safetynet.alerts.AdminControllerTest   : Running with Spring Boot v3.3.4, Spring v6.1.13
+2026-02-26T17:07:44.970-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.safetynet.alerts.AdminControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2026-02-26T17:07:46.440-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.alerts.repository.DataRepository     : Loaded data: persons=23, firestations=11, medicalrecords=23
+2026-02-26T17:07:46.443-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.alerts.repository.DataRepository     : Distinct stations in memory: [3, 2, 1, 4]
+2026-02-26T17:07:47.244-05:00  INFO 36316 --- [SafetyNet Alerts] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-02-26T17:07:47.244-05:00  INFO 36316 --- [SafetyNet Alerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-02-26T17:07:47.245-05:00  INFO 36316 --- [SafetyNet Alerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-02-26T17:07:47.273-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.safetynet.alerts.AdminControllerTest   : Started AdminControllerTest in 2.988 seconds (process running for 6.47)
+2026-02-26T17:07:49.016-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.alerts.controller.PersonController   : POST /person body=com.safetynet.alerts.model.Person@1278c48f
+2026-02-26T17:07:49.148-05:00  WARN 36316 --- [SafetyNet Alerts] [main] c.s.alerts.controller.PersonController   : >>> Entered updatePerson(RequestParam) handler
+2026-02-26T17:07:49.152-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.alerts.controller.PersonController   : DELETE /person firstName=Test lastName=User
+2026-02-26T17:07:49.180-05:00  INFO 36316 --- [SafetyNet Alerts] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.safetynet.alerts.AlertControllerTest]: AlertControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-26T17:07:49.184-05:00  INFO 36316 --- [SafetyNet Alerts] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.safetynet.alerts.AlertsApplication for test class com.safetynet.alerts.AlertControllerTest
+2026-02-26T17:07:49.200-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.alerts.controller.QueryController    : GET /childAlert?address=29 15th St
+2026-02-26T17:07:49.203-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.alerts.controller.QueryController    : Response: {}
+2026-02-26T17:07:49.220-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.controller.PersonInfoController    : GET /personInfo lastName=Boyd
+2026-02-26T17:07:49.236-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.alerts.controller.QueryController    : GET /fire?address=1509 Culver St
+2026-02-26T17:07:49.240-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.alerts.controller.QueryController    : Response: com.safetynet.alerts.dto.FireResponseDTO@6d82a9bb
+2026-02-26T17:07:49.259-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.alerts.controller.QueryController    : GET /communityEmail?city=Culver
+2026-02-26T17:07:49.262-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.alerts.controller.QueryController    : Response: com.safetynet.alerts.dto.CommunityEmailDTO@5a5c9a46
+2026-02-26T17:07:49.280-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.alerts.controller.QueryController    : GET /phoneAlert?firestation=99
+2026-02-26T17:07:49.282-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.alerts.controller.QueryController    : Response: {phones=[]}
+2026-02-26T17:07:49.294-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.alerts.controller.QueryController    : GET /firestation?stationNumber=1
+2026-02-26T17:07:49.296-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.alerts.controller.QueryController    : Response: {persons=[com.safetynet.alerts.dto.PersonSummaryDTO@1c761232, com.safetynet.alerts.dto.PersonSummaryDTO@7e765313, com.safetynet.alerts.dto.PersonSummaryDTO@b2a688d, com.safetynet.alerts.dto.PersonSummaryDTO@296ac298, com.safetynet.alerts.dto.PersonSummaryDTO@5a1b205, com.safetynet.alerts.dto.PersonSummaryDTO@49038769], adults=5, children=1}
+2026-02-26T17:07:49.309-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.alerts.controller.QueryController    : GET /flood/stations?stations=1,2
+2026-02-26T17:07:49.312-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.alerts.controller.QueryController    : Response: {951 LoneTree Rd=[com.safetynet.alerts.dto.ResidentDetailsDTO@9a4bb97], 908 73rd St=[com.safetynet.alerts.dto.ResidentDetailsDTO@d32178b, com.safetynet.alerts.dto.ResidentDetailsDTO@6c2d9f6f], 947 E. Rose Dr=[com.safetynet.alerts.dto.ResidentDetailsDTO@72d1a87a, com.safetynet.alerts.dto.ResidentDetailsDTO@6fc277e4, com.safetynet.alerts.dto.ResidentDetailsDTO@6f944b94], 644 Gershwin Cir=[com.safetynet.alerts.dto.ResidentDetailsDTO@1fc48b16], 892 Downing Ct=[com.safetynet.alerts.dto.ResidentDetailsDTO@2e408d5a, com.safetynet.alerts.dto.ResidentDetailsDTO@52a2c66, com.safetynet.alerts.dto.ResidentDetailsDTO@3e8d8bee], 29 15th St=[com.safetynet.alerts.dto.ResidentDetailsDTO@5a14682d]}
+2026-02-26T17:07:49.331-05:00  INFO 36316 --- [SafetyNet Alerts] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.safetynet.alerts.controller.FirestationControllerSliceTest]: FirestationControllerSliceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-26T17:07:49.381-05:00  INFO 36316 --- [SafetyNet Alerts] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.safetynet.alerts.AlertsApplication for test class com.safetynet.alerts.controller.FirestationControllerSliceTest
+2026-02-26T17:07:49.422-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.c.FirestationControllerSliceTest   : Starting FirestationControllerSliceTest using Java 21.0.2 with PID 36316 (started by sxk839 in C:\Users\sxk839\eclipse-workspace\SafetyNet-Alerts-full\safetynet-alerts)
+2026-02-26T17:07:49.423-05:00 DEBUG 36316 --- [SafetyNet Alerts] [main] c.s.a.c.FirestationControllerSliceTest   : Running with Spring Boot v3.3.4, Spring v6.1.13
+2026-02-26T17:07:49.423-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.c.FirestationControllerSliceTest   : No active profile set, falling back to 1 default profile: "default"
+2026-02-26T17:07:50.203-05:00  INFO 36316 --- [SafetyNet Alerts] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-02-26T17:07:50.203-05:00  INFO 36316 --- [SafetyNet Alerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-02-26T17:07:50.204-05:00  INFO 36316 --- [SafetyNet Alerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-02-26T17:07:50.223-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.c.FirestationControllerSliceTest   : Started FirestationControllerSliceTest in 0.838 seconds (process running for 9.42)
+2026-02-26T17:07:50.404-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.controller.FirestationController   : DELETE /firestation station=99
+2026-02-26T17:07:50.409-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.controller.FirestationController   : DELETE /firestation station=3
+2026-02-26T17:07:50.438-05:00  INFO 36316 --- [SafetyNet Alerts] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.safetynet.alerts.controller.FirestationControllerTest]: FirestationControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-26T17:07:50.465-05:00  INFO 36316 --- [SafetyNet Alerts] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.safetynet.alerts.AlertsApplication for test class com.safetynet.alerts.controller.FirestationControllerTest
+2026-02-26T17:07:50.476-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.controller.FirestationController   : DELETE /firestation station=3
+2026-02-26T17:07:50.494-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.controller.FirestationController   : PUT /firestation address=1509 Culver St body=com.safetynet.alerts.model.Firestation@7ca3fa41
+2026-02-26T17:07:50.507-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.controller.FirestationController   : DELETE /firestation address=1509 Culver St
+2026-02-26T17:07:50.539-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.controller.FirestationController   : POST /firestation body=com.safetynet.alerts.model.Firestation@642f1d22
+2026-02-26T17:07:50.552-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.controller.FirestationController   : PUT /firestation address=unknown body=com.safetynet.alerts.model.Firestation@1f116973
+2026-02-26T17:07:50.574-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.controller.FirestationController   : DELETE /firestation station=3
+2026-02-26T17:07:50.584-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.controller.FirestationController   : DELETE /firestation address=unknown
+2026-02-26T17:07:50.601-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.controller.FirestationController   : POST /firestation body=com.safetynet.alerts.model.Firestation@3baed0a9
+2026-02-26T17:07:50.625-05:00  INFO 36316 --- [SafetyNet Alerts] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.safetynet.alerts.controller.MedicalRecordControllerTest]: MedicalRecordControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-26T17:07:50.651-05:00  INFO 36316 --- [SafetyNet Alerts] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.safetynet.alerts.AlertsApplication for test class com.safetynet.alerts.controller.MedicalRecordControllerTest
+2026-02-26T17:07:50.710-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.c.MedicalRecordControllerTest      : Starting MedicalRecordControllerTest using Java 21.0.2 with PID 36316 (started by sxk839 in C:\Users\sxk839\eclipse-workspace\SafetyNet-Alerts-full\safetynet-alerts)
+2026-02-26T17:07:50.711-05:00 DEBUG 36316 --- [SafetyNet Alerts] [main] c.s.a.c.MedicalRecordControllerTest      : Running with Spring Boot v3.3.4, Spring v6.1.13
+2026-02-26T17:07:50.712-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.c.MedicalRecordControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2026-02-26T17:07:51.113-05:00  INFO 36316 --- [SafetyNet Alerts] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-02-26T17:07:51.114-05:00  INFO 36316 --- [SafetyNet Alerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-02-26T17:07:51.115-05:00  INFO 36316 --- [SafetyNet Alerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-02-26T17:07:51.122-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.c.MedicalRecordControllerTest      : Started MedicalRecordControllerTest in 0.464 seconds (process running for 10.32)
+2026-02-26T17:07:51.134-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.c.MedicalRecordController          : DELETE /medicalRecord firstName=John1 lastName=Doe1
+2026-02-26T17:07:51.143-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.c.MedicalRecordController          : DELETE /medicalRecord firstName=John1 lastName=Doe1
+2026-02-26T17:07:51.158-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.c.MedicalRecordController          : PUT /medicalRecord firstName=John1 lastName=Doe1 body=com.safetynet.alerts.model.MedicalRecord@64a7c885
+2026-02-26T17:07:51.171-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.c.MedicalRecordController          : PUT /medicalRecord firstName=John1 lastName=Doe1 body=com.safetynet.alerts.model.MedicalRecord@13f3a04e
+2026-02-26T17:07:51.201-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.c.MedicalRecordController          : POST /medicalRecord body=com.safetynet.alerts.model.MedicalRecord@637721f4
+2026-02-26T17:07:51.220-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.c.MedicalRecordController          : POST /medicalRecord body=com.safetynet.alerts.model.MedicalRecord@74d925e7
+2026-02-26T17:07:51.235-05:00  INFO 36316 --- [SafetyNet Alerts] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.safetynet.alerts.controller.PersonControllerTest]: PersonControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-26T17:07:51.249-05:00  INFO 36316 --- [SafetyNet Alerts] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.safetynet.alerts.AlertsApplication for test class com.safetynet.alerts.controller.PersonControllerTest
+2026-02-26T17:07:51.306-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.controller.PersonControllerTest    : Starting PersonControllerTest using Java 21.0.2 with PID 36316 (started by sxk839 in C:\Users\sxk839\eclipse-workspace\SafetyNet-Alerts-full\safetynet-alerts)
+2026-02-26T17:07:51.306-05:00 DEBUG 36316 --- [SafetyNet Alerts] [main] c.s.a.controller.PersonControllerTest    : Running with Spring Boot v3.3.4, Spring v6.1.13
+2026-02-26T17:07:51.307-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.controller.PersonControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2026-02-26T17:07:51.660-05:00  INFO 36316 --- [SafetyNet Alerts] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-02-26T17:07:51.661-05:00  INFO 36316 --- [SafetyNet Alerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-02-26T17:07:51.661-05:00  INFO 36316 --- [SafetyNet Alerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-02-26T17:07:51.665-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.controller.PersonControllerTest    : Started PersonControllerTest in 0.411 seconds (process running for 10.862)
+2026-02-26T17:07:51.679-05:00  WARN 36316 --- [SafetyNet Alerts] [main] c.s.alerts.controller.PersonController   : >>> Entered updatePerson(RequestParam) handler
+2026-02-26T17:07:51.689-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.alerts.controller.PersonController   : GET /person firstName=No lastName=Body
+2026-02-26T17:07:51.700-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.alerts.controller.PersonController   : POST /person body=com.safetynet.alerts.model.Person@7fba1751
+2026-02-26T17:07:51.706-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.alerts.controller.PersonController   : POST /person body=com.safetynet.alerts.model.Person@711df813
+2026-02-26T17:07:51.715-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.alerts.controller.PersonController   : DELETE /person firstName=John lastName=Boyd
+2026-02-26T17:07:51.723-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.alerts.controller.PersonController   : DELETE /person firstName=No lastName=Body
+2026-02-26T17:07:51.741-05:00  WARN 36316 --- [SafetyNet Alerts] [main] c.s.alerts.controller.PersonController   : >>> Entered updatePerson(RequestParam) handler
+2026-02-26T17:07:51.753-05:00  INFO 36316 --- [SafetyNet Alerts] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.safetynet.alerts.controller.PersonInfoControllerTest]: PersonInfoControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-26T17:07:51.770-05:00  INFO 36316 --- [SafetyNet Alerts] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.safetynet.alerts.AlertsApplication for test class com.safetynet.alerts.controller.PersonInfoControllerTest
+2026-02-26T17:07:51.820-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.c.PersonInfoControllerTest         : Starting PersonInfoControllerTest using Java 21.0.2 with PID 36316 (started by sxk839 in C:\Users\sxk839\eclipse-workspace\SafetyNet-Alerts-full\safetynet-alerts)
+2026-02-26T17:07:51.820-05:00 DEBUG 36316 --- [SafetyNet Alerts] [main] c.s.a.c.PersonInfoControllerTest         : Running with Spring Boot v3.3.4, Spring v6.1.13
+2026-02-26T17:07:51.820-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.c.PersonInfoControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2026-02-26T17:07:52.119-05:00  INFO 36316 --- [SafetyNet Alerts] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-02-26T17:07:52.119-05:00  INFO 36316 --- [SafetyNet Alerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-02-26T17:07:52.119-05:00  INFO 36316 --- [SafetyNet Alerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-02-26T17:07:52.124-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.c.PersonInfoControllerTest         : Started PersonInfoControllerTest in 0.348 seconds (process running for 11.321)
+2026-02-26T17:07:52.146-05:00 ERROR 36316 --- [SafetyNet Alerts] [main] c.s.a.controller.GlobalExceptionHandler  : Parameter conditions not met: Parameter conditions "lastName" not met for actual request parameters: 
+
+org.springframework.web.bind.UnsatisfiedServletRequestParameterException: Parameter conditions "lastName" not met for actual request parameters: 
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:292) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:441) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:127) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:507) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1284) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.test.web.servlet.TestDispatcherServlet.getHandler(TestDispatcherServlet.java:123) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72) ~[spring-test-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201) ~[spring-test-6.1.13.jar:6.1.13]
+	at com.safetynet.alerts.controller.PersonInfoControllerTest.bad_request_400_when_missing_param(PersonInfoControllerTest.java:51) ~[test-classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728) ~[junit-platform-commons-1.10.3.jar:1.10.3]
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56) ~[surefire-junit-platform-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184) ~[surefire-junit-platform-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148) ~[surefire-junit-platform-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122) ~[surefire-junit-platform-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) ~[surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) ~[surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) ~[surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) ~[surefire-booter-3.3.0.jar:3.3.0]
+
+2026-02-26T17:07:52.176-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.controller.PersonInfoController    : GET /personInfo lastName=Boyd
+2026-02-26T17:07:52.187-05:00  INFO 36316 --- [SafetyNet Alerts] [main] c.s.a.controller.PersonInfoController    : GET /personInfo lastName=Nope
+2026-02-26T17:07:52.196-05:00  INFO 36316 --- [SafetyNet Alerts] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.safetynet.alerts.ErrorHandlingTest]: ErrorHandlingTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-26T17:07:52.201-05:00  INFO 36316 --- [SafetyNet Alerts] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.safetynet.alerts.AlertsApplication for test class com.safetynet.alerts.ErrorHandlingTest
+2026-02-26T17:07:52.217-05:00 ERROR 36316 --- [SafetyNet Alerts] [main] c.s.a.controller.GlobalExceptionHandler  : Type mismatch: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "abc"
+
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "abc"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.convertIfNecessary(AbstractNamedValueMethodArgumentResolver.java:302) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:137) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72) ~[spring-test-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201) ~[spring-test-6.1.13.jar:6.1.13]
+	at com.safetynet.alerts.ErrorHandlingTest.bad_station_number_returns_consistent_error_json(ErrorHandlingTest.java:20) ~[test-classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728) ~[junit-platform-commons-1.10.3.jar:1.10.3]
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56) ~[surefire-junit-platform-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184) ~[surefire-junit-platform-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148) ~[surefire-junit-platform-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122) ~[surefire-junit-platform-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) ~[surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) ~[surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) ~[surefire-booter-3.3.0.jar:3.3.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) ~[surefire-booter-3.3.0.jar:3.3.0]
+Caused by: java.lang.NumberFormatException: For input string: "abc"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[na:na]
+	at java.base/java.lang.Integer.parseInt(Integer.java:662) ~[na:na]
+	at java.base/java.lang.Integer.valueOf(Integer.java:989) ~[na:na]
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:203) ~[spring-core-6.1.13.jar:6.1.13]
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:439) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:412) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:161) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:80) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:53) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:860) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.convertIfNecessary(AbstractNamedValueMethodArgumentResolver.java:294) ~[spring-web-6.1.13.jar:6.1.13]
+	... 101 common frames omitted
+
